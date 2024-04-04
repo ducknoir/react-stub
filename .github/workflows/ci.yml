@@ -14,5 +14,5 @@ jobs:
         node-version: '20' # Specifying Node.js version 20
     - name: Install Dependencies
       run: npm install
-    #- name: Run Tests
-    #  run: npm test
+    - name: Run Tests
+      run: npm test
