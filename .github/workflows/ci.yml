@@ -1,0 +1,18 @@
+name: React-CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3 # Using the latest version of the checkout action
+    - name: Set up Node.js
+      uses: actions/setup-node@v5 # Updated to use v5
+      with:
+        node-version: '20' # Specifying Node.js version 20
+    - name: Install Dependencies
+      run: npm install
+    #- name: Run Tests
+    #  run: npm test
