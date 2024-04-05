@@ -1,6 +1,9 @@
 name: React-CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -16,3 +19,13 @@ jobs:
       run: npm install
     - name: Run Tests
       run: npm test
+    # Deployment step
+    - name: Build React app
+      run: npm run build
+    - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Branch to deploy to
+          folder: build     # Folder to deploy
+        if: github.ref == 'refs/heads/master'  # Conditional deployment
+        
