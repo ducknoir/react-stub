@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/react-stub/static/js/main.fc1e0f92.js",
+    "main.js": "/react-stub/static/js/main.a7ba6878.js",
     "index.html": "/react-stub/index.html",
-    "main.fc1e0f92.js.map": "/react-stub/static/js/main.fc1e0f92.js.map"
+    "main.a7ba6878.js.map": "/react-stub/static/js/main.a7ba6878.js.map"
   },
   "entrypoints": [
-    "static/js/main.fc1e0f92.js"
+    "static/js/main.a7ba6878.js"
   ]
 }
