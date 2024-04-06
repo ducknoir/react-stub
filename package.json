@@ -2,8 +2,7 @@
   "name": "github_actions_test_react_stub",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<username>.github.io/react-stub/",
-
+  "homepage": "https://ducknoir.github.io/react-stub/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
